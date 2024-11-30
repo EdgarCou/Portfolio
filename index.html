@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="header-home">
+        <nav>
+            <span><span class="blue-text">EC</span><span class="white-text">.</span></span>
+            <ul>
+                <li><a href="index.html">//Accueil</a></li>
+                <li><a href="#page_about">//A Propos</a></li>
+                <li><a href="competence.html">//Compétences</a></li>
+                <li><a href="about.html">//Projets</a></li>
+                <li><a href="contact.html">//Contact</a></li>
+            </ul>
+            <a class="CV_button" href="" target="">Mon CV</a>
+        </nav>
+    </header>
+    <header id="header-about" style="display: none;">
+        <nav>
+            <ul>
+                <li><a href="index.html">//Accueil</a></li>
+                <li><a href="#page_about">//A Propos</a></li>
+                <li><a href="competence.html">//Compétences</a></li>
+                <li><a href="about.html">//Projets</a></li>
+                <li><a href="contact.html">//Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="page_home">
+        <h1>Edgar</h1>
+        <h1>COUTHOUIS</h1>
+        <p>Etudiant en informatique spécialisé dans la cybersécurité</p>
+        <div class="social-media">
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-github'></i></a>
+        </div>
+        <div class="scroll-down">
+            <a href="#page_about">
+                <dotlottie-player src="https://lottie.host/3dc17be5-3b56-4418-b05a-ead8c0f57cf1/QS4SCLHa49.json" background="transparent" speed="1" style="width: 75px; height: 75px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+            </a>
+        </div>
+        
+    </section>
+    <section id="page_about" class="page_about">
+        <div class="about">
+            <div class="about-title">
+                <h1>A propos de moi</h1>
+                <h3>Recherche un stage en <span>réseaux</span> ou en <span>cybersécurité</span>.</h3>
+                <p>Étudiant en informatique, je me spécialise en cybersécurité pour anticiper et relever les défis de la protection numérique.</p>
+                <p>Fort d’une expérience en développement web et réseaux, je développe mes compétences pour sécuriser les environnements numériques.</p>
+                <a class="CV_button" href="" target="">Mon CV</a>
+            </div>
+           <div class="photo">
+                <img src="moi.jpg" alt="photo">
+            </div>
+        </div>
+    </section>
+    <section class="page_competence">
+        <h1>Mes compétences</h1>
+        <div class="Hard_skills">
+            <a href="" target="">Hard skills</a>
+        </div>
+        <div class="Soft_skills">
+            <a href="" target="">Soft skills</a>
+        </div>
+    </section>
+    <section class="page_project">
+        <h1>Quelques projets</h1>
+        <div class="project-impair">
+            <div class="image_projet">
+                <img src="img/projet1.jpg" alt="projet1">
+            </div>
+            <div class="description_projet">
+                <p>groupe / perso </p>
+                <h2>Projet 1</h2>
+                <p class="synopsis_projet">description</p>
+                <p class="techno_projet">techno</p>
+                <a href="" target="">github</a>
+            </div>
+        </div>
+        <div class="project-pair">
+            <div class="image_projet">
+                <img src="img/projet1.jpg" alt="projet1">
+            </div>
+            <div class="description_projet">
+                <p>groupe / perso </p>
+                <h4>Projet 1</h4>
+                <p class="synopsis_projet">description</p>
+                <p class="techno_projet">techno</p>
+                <a href="" target="">github</a>
+            </div>
+        </div>
+    </section>
+    <section class="page_contact">
+        <h1>Contactez-moi</h1>
+        <div class="RGPD">
+            <h2>N'hésitez pas à m'envoyer un message en cas de question ou de demande !</h2>
+            <p>Ce formulaire de contact est conforme au règlement général de la protection des données, RGPD.</p>
+            <p>Ces informations personnelles permettent uniquement de me contacter et ne seront pas utilisées à d'autres fins.</p>
+        </div>
+        <form action="">
+            <input type="text" placeholder="Nom Prénom">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Objet">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button>Envoyer</button>
+        </form>
+
+       
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const cursor = document.createElement('div');
+                cursor.classList.add('cursor');
+                document.body.appendChild(cursor);
+        
+                document.addEventListener('mousemove', function(e) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+        
+                document.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('mouseenter', () => {
+                        cursor.style.width = '20px';
+                        cursor.style.height = '20px';
+                        cursor.style.opacity = '0.5';
+                    });
+                    link.addEventListener('mouseleave', () => {
+                        cursor.style.width = '5px';
+                        cursor.style.height = '5px';
+                        cursor.style.opacity = '1';
+                    });
+                });
+            });
+        </script>
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <script>
+            document.querySelector('.scroll-down a').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+        * <script>
+            document.querySelector('.scroll-down a').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+    
+            window.addEventListener('scroll', function() {
+                const headerHome = document.getElementById('header-home');
+                const headerAbout = document.getElementById('header-about');
+                const pageAbout = document.getElementById('page_about');
+                const pageAboutTop = pageAbout.getBoundingClientRect().top;
+    
+                if (pageAboutTop <= 0) {
+                    headerHome.style.display = 'none';
+                    headerAbout.style.display = 'block';
+                } else {
+                    headerHome.style.display = 'block';
+                    headerAbout.style.display = 'none';
+                }
+            });
+        </script>
+</body>
+</html>
