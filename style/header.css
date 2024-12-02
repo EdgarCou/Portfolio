@@ -6,13 +6,13 @@ header {
     width: 100%;
     z-index: 1000; 
     padding: 10px 0; 
-    font-size: 1.2em;
+    font-size: 1vw;
 
 }
 
 header span {
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1vw;
 }
 
 .blue-text {

@@ -3,7 +3,6 @@
     padding-top: 20px;
     margin: 0;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +10,7 @@
 }
 
 .page_projet h1 {
-    font-size: 5em;
+    font-size: 4vw;
     font-weight: 100;
     margin-top: 3%;
 
@@ -47,19 +46,19 @@
 }
 
 .description_projet .title, .description_projet .title_reverse {
-    font-size: 3em;
-    margin-bottom: 1.5em;
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
     color: #6EC1E4;
 }
 
 .description_projet p {
-    font-size: 1em;
+    font-size: 1vw;
     margin-bottom: 1em;
 }
 
 
 .synopsis_projet {
-    font-size: 1.5em !important;
+    font-size: 1vw !important;
     flex: 1;
     padding: 20px;
     background-color: rgba(209, 209, 209, 0.9);
@@ -71,7 +70,7 @@
 }
 
 .synopsis_projet_reverse {
-    font-size: 1.5em !important;
+    font-size: 1vw !important;
     flex: 1;
     padding: 20px;
     background-color: rgba(209, 209, 209, 0.9);

@@ -32,13 +32,13 @@
 }
 
 .page_home h1 {
-    font-size: 12em;
+    font-size: 6vw;
     margin: 0;
     font-weight: 100;
 }
 
 .page_home p {
-    font-size: 2em;
+    font-size: 1vw;
     margin: 2% 0;
     font-weight: 100;
 }
